@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/shuttle.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full sm:py-3 bg-black z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="#" class="text-white font-bold text-xl">Space project</a>
+
+            <!-- Hamburger Menu Button -->
+            <button type="button"
+                class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 sm:hidden"
+                id="mobile-menu-button">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <!-- Links -->
+            <div class="hidden sm:flex space-x-5" id="menu-links">
+                <a href="#about" class="text-white hover:text-gray-300 text-sm">about</a>
+                <a href="#roadmap" class="text-white hover:text-gray-300 text-sm">roadmap</a>
+            </div>
+        </div>
+
+        <!-- Responsive Menu -->
+        <div class="hidden flex-col sm:hidden px-4" id="mobile-menu">
+            <a href="#about" class="text-white hover:text-gray-300 py-3 text-sm block">about</a>
+            <a href="#roadmap" class="text-white hover:text-gray-300 py-3 text-sm block">roadmap</a>
+        </div>
+    </nav>
+
+    <!-- Video -->
+    <div class="relative">
+        <video id="myvideo" muted autoplay preload="auto" loop class="w-full mt-16 sm:mt-[88px]">
+            <source src="Assets\space.mp4" type="video/mp4" id="video">
+        </video>
+
+        <div class="flex justify-center items-center absolute bottom-0 mb-6 w-full gap-4">
+            <a href="#" class="fab fa-facebook-square text-white text-4xl hover:scale-105"></a>
+            <a href="#" class="fab fa-twitter-square text-white text-4xl hover:scale-105 mx-3"></a>
+            <a href="#" class="fab fa-youtube-square text-white text-4xl hover:scale-105"></a>
+        </div>
+
+    </div>
+
+    <!-- About -->
+    <section class="text-center bg-gradient-to-r from-blue-700 to-red-600 pt-20" id="about">
+        <h2 class="text-3xl md:text-4xl">About</h2>
+        <div class="w-3/5 md:w-2/5 m-auto pt-16 pb-20 px-4">
+            <p class="text-[14px] leading-loose tracking-widest text-gray-950 sm:text-base sm:leading-loose">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p>
+        </div>
+    </section>
+
+    <!-- Icons -->
+    <div class="bg-black grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6 py-20 px-8">
+        <div class="block text-center overflow-visible">
+            <img src="Assets\astronaut.png" class="w-32 m-auto hover:scale-105">
+            <p class="text-white mt-4">Explore Space</p>
+        </div>
+
+        <div class="block text-center overflow-visible">
+            <img src="Assets\venus.png" class="w-32 m-auto hover:scale-105">
+            <p class="text-white mt-4">Mystic Planet</p>
+        </div>
+
+        <div class="block text-center overflow-visible">
+            <img src="Assets\shuttle.png" class="w-32 m-auto hover:scale-105">
+            <p class="text-white mt-4">Space Travel</p>
+        </div>
+
+        <div class="block text-center overflow-visible">
+            <img src="Assets\alien.png" class="w-32 m-auto hover:scale-105">
+            <p class="text-white mt-4">Alien Encounter</p>
+        </div>
+    </div>
+
+    <!-- Roadmap -->
+    <h2 class="text-3xl md:text-4xl text-center bg-gradient-to-r from-blue-700 to-red-600 pt-20">Roadmap</h2>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gradient-to-r from-blue-700 to-red-600 py-16 px-4"
+        id="roadmap">
+        <div class="text-center">
+            <h2 class="text-2xl my-4">Phase 1</h2>
+            <ul class="text-gray-950">
+                <li class="my-6">Succesful stealth</li>
+                <li class="my-6">First Donation</li>
+                <li class="my-6">Launch 100 Holders</li>
+                <li class="my-6">1 million Market cap</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl my-4">Phase 2</h2>
+            <ul class="text-gray-950">
+                <li class="my-6">500 holders</li>
+                <li class="my-6">Website v2</li>
+                <li class="my-6">CMC + CG</li>
+                <li class="my-6">Merchandise Launch</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-2xl my-4">Phase 3</h2>
+            <ul class="text-gray-950">
+                <li class="my-6">CEX listings</li>
+                <li class="my-6">Charity event</li>
+                <li class="my-6">1000 Holders</li>
+                <li class="my-6">New official Season</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="px-5 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-black">
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Space Exploration</h3>
+            <p class="text-[#575550]">Journey into the unknown.</p>
+        </div>
+
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Space Technology</h3>
+            <p class="text-[#575550]">Discover the latest innovations.</p>
+        </div>
+
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Astronomy</h3>
+            <p class="text-[#575550]">Discover the secrets of the cosmos.</p>
+        </div>
+
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Stellar Phenomena</h3>
+            <p class="text-[#575550]">Witness the wonders of stars.</p>
+        </div>
+
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Exoplanets</h3>
+            <p class="text-[#575550]">Explore distant worlds.</p>
+        </div>
+
+        <div class="bg-black p-4 rounded-lg border-2 border-[#575550] hover:border-white">
+            <h3 class="text-white text-xl mb-2">Astrobiology</h3>
+            <p class="text-[#575550]">Exploring life beyond Earth.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-gradient-to-r from-blue-700 to-red-600 py-20 px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl text-center text-black mb-12">Contact Us</h2>
+
+            <form class="bg-black shadow-md rounded px-8 py-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-white text-sm mb-2" for="name">Name</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name" type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-white text-sm mb-2" for="email">Email</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email" type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-white text-sm mb-2" for="message">Message</label>
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <button
+                        class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" onclick="contact()">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
+
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top"
+        class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded fixed bottom-4 right-4 hidden">Top</button>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 text-center text-[14px] sm:text-base" id="footer">
+        <p class="px-4 text-white">&copy; 2023 Space Project All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

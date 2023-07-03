@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: spacefont;
+    src: url(Fonts/spacefont.ttf);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: spacefont;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  #myvideo {
+    height: calc(100dvh - 88px);
+    object-fit: cover;
+  }
+
+  @media (max-width: 640px) {
+    #myvideo {
+      height: calc(100dvh - 64px);
+    }
+  }
+
